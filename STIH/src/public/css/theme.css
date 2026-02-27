@@ -1,0 +1,11 @@
+/* ═══════════════ THEME STYLES ═══════════════ */
+
+/* Light mode specific adjustments if needed */
+html.light {
+  /* Any light-mode specific styles can go here */
+}
+
+/* Dark mode (default) */
+html:not(.light) {
+  /* Any dark-mode specific styles can go here */
+}

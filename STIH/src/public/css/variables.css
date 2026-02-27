@@ -1,0 +1,40 @@
+/* ═══════════════ CSS VARIABLES ═══════════════ */
+
+:root {
+  --red: #E8192C;
+  --dark: #080810;
+  --card: #0f0f1a;
+  --card2: #13131f;
+  --border: #1c1c2e;
+  --muted: #6b6b8f;
+  --gold: #F5C518;
+  --green: #22C55E;
+  --blue: #3B82F6;
+  --text: #e8e8f0;
+  --heading: #ffffff;
+  --strong: #d0d0e8;
+  --nav-bg: rgba(8,8,16,0.88);
+  --shadow: rgba(0,0,0,0.4);
+}
+
+html.light {
+  --dark: #f0f0f6;
+  --card: #ffffff;
+  --card2: #eaeaf2;
+  --border: #d4d4e4;
+  --muted: #7070a0;
+  --text: #1a1a2e;
+  --heading: #0a0a18;
+  --strong: #2a2a45;
+  --nav-bg: rgba(240,240,246,0.94);
+  --shadow: rgba(0,0,0,0.10);
+  --gold: #9a6800;
+  --green: #15803d;
+}
+
+/* Fonts */
+:root {
+  --font-bebas: 'Bebas Neue', cursive;
+  --font-sans: 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}

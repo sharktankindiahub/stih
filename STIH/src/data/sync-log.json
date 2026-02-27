@@ -1,0 +1,10 @@
+{
+  "lastSyncAt": "2026-02-25T16:04:56.248Z",
+  "status": "success",
+  "recordsImported": {
+    "pitches": 702,
+    "sharks": 8,
+    "seasons": 5
+  },
+  "message": "Data synchronized successfully from Kaggle"
+}

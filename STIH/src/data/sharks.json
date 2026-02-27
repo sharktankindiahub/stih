@@ -1,0 +1,378 @@
+[
+  {
+    "id": 1,
+    "name": "Namita",
+    "fullName": "Namita Thapar",
+    "title": "Executive Director, Emcure Pharma",
+    "emoji": "💊",
+    "color": "#8B5CF6",
+    "deals": 121,
+    "investedCr": 44.9,
+    "topIndustries": [
+      "Beauty/Fashion",
+      "Medical/Health",
+      "Food and Beverage"
+    ],
+    "seasons": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Vineeta",
+    "fullName": "Vineeta Singh",
+    "title": "CEO & Co-founder, SUGAR Cosmetics",
+    "emoji": "💄",
+    "color": "#EC4899",
+    "deals": 91,
+    "investedCr": 30.4,
+    "topIndustries": [
+      "Food and Beverage",
+      "Beauty/Fashion",
+      "Medical/Health"
+    ],
+    "seasons": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Anupam",
+    "fullName": "Anupam Mittal",
+    "title": "Founder & CEO, Shaadi.com",
+    "emoji": "💍",
+    "color": "#3B82F6",
+    "deals": 108,
+    "investedCr": 39.2,
+    "topIndustries": [
+      "Beauty/Fashion",
+      "Food and Beverage",
+      "Medical/Health"
+    ],
+    "seasons": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Aman",
+    "fullName": "Aman Gupta",
+    "title": "Co-founder & CMO, boAt",
+    "emoji": "🎧",
+    "color": "#F97316",
+    "deals": 143,
+    "investedCr": 58.5,
+    "topIndustries": [
+      "Food and Beverage",
+      "Beauty/Fashion",
+      "Medical/Health"
+    ],
+    "seasons": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Peyush",
+    "fullName": "Peyush Bansal",
+    "title": "Co-founder & CEO, Lenskart",
+    "emoji": "👓",
+    "color": "#10B981",
+    "deals": 103,
+    "investedCr": 40.7,
+    "topIndustries": [
+      "Food and Beverage",
+      "Medical/Health",
+      "Beauty/Fashion"
+    ],
+    "seasons": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Ritesh",
+    "fullName": "Ritesh Agarwal",
+    "title": "Founder & CEO, OYO Rooms",
+    "emoji": "🏨",
+    "color": "#F59E0B",
+    "deals": 53,
+    "investedCr": 22.5,
+    "topIndustries": [
+      "Food and Beverage",
+      "Beauty/Fashion",
+      "Technology/Software"
+    ],
+    "seasons": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Amit",
+    "fullName": "Amit Jain",
+    "title": "Co-founder & CEO, CarDekho",
+    "emoji": "🚗",
+    "color": "#6366F1",
+    "deals": 36,
+    "investedCr": 12.8,
+    "topIndustries": [
+      "Food and Beverage",
+      "Beauty/Fashion",
+      "Medical/Health"
+    ],
+    "seasons": [
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Ashneer Grover",
+    "fullName": "Ashneer Grover",
+    "title": "Co-founder, BharatPe (S1-S2)",
+    "emoji": "💸",
+    "color": "#EF4444",
+    "deals": 21,
+    "investedCr": 5.4,
+    "topIndustries": [
+      "Food and Beverage",
+      "Vehicles/Electrical Vehicles",
+      "Children/Education"
+    ],
+    "seasons": [
+      1
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Kunal Bahl",
+    "fullName": "Kunal Bahl",
+    "title": "Co-founder & CEO, Snapdeal",
+    "emoji": "🛒",
+    "color": "#06B6D4",
+    "deals": 19,
+    "investedCr": 15.0,
+    "topIndustries": [
+      "Food and Beverage",
+      "Beauty/Fashion",
+      "Medical/Health"
+    ],
+    "seasons": [
+      4,
+      5
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Ghazal Alagh",
+    "fullName": "Ghazal Alagh",
+    "title": "Guest Shark",
+    "emoji": "🦈",
+    "color": "#888888",
+    "deals": 8,
+    "investedCr": 1.6,
+    "topIndustries": [
+      "Food and Beverage",
+      "Medical/Health",
+      "Manufacturing"
+    ],
+    "seasons": [
+      1
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Azhar Iqubal",
+    "fullName": "Azhar Iqubal",
+    "title": "Guest Shark",
+    "emoji": "🦈",
+    "color": "#888888",
+    "deals": 8,
+    "investedCr": 3.6,
+    "topIndustries": [
+      "Beauty/Fashion",
+      "Food and Beverage",
+      "Medical/Health"
+    ],
+    "seasons": [
+      3,
+      4
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Radhika Gupta",
+    "fullName": "Radhika Gupta",
+    "title": "Guest Shark",
+    "emoji": "🦈",
+    "color": "#888888",
+    "deals": 6,
+    "investedCr": 2.0,
+    "topIndustries": [
+      "Beauty/Fashion",
+      "Green/CleanTech",
+      "Food and Beverage"
+    ],
+    "seasons": [
+      3
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Varun Dua",
+    "fullName": "Varun Dua",
+    "title": "Guest Shark",
+    "emoji": "🦈",
+    "color": "#888888",
+    "deals": 4,
+    "investedCr": 1.5,
+    "topIndustries": [
+      "Technology/Software"
+    ],
+    "seasons": [
+      3,
+      4
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Varun Alagh",
+    "fullName": "Varun Alagh",
+    "title": "Guest Shark",
+    "emoji": "🦈",
+    "color": "#888888",
+    "deals": 4,
+    "investedCr": 3.7,
+    "topIndustries": [
+      "Animal/Pets",
+      "Food and Beverage",
+      "Beauty/Fashion"
+    ],
+    "seasons": [
+      5
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Mohit Yadav",
+    "fullName": "Mohit Yadav",
+    "title": "Guest Shark",
+    "emoji": "🦈",
+    "color": "#888888",
+    "deals": 3,
+    "investedCr": 2.6,
+    "topIndustries": [
+      "Food and Beverage",
+      "Entertainment",
+      "Technology/Software"
+    ],
+    "seasons": [
+      5
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Vikas D Nahar",
+    "fullName": "Vikas D Nahar",
+    "title": "Guest Shark",
+    "emoji": "🦈",
+    "color": "#888888",
+    "deals": 2,
+    "investedCr": 0.7,
+    "topIndustries": [
+      "Beauty/Fashion",
+      "Liquor/Alcohol"
+    ],
+    "seasons": [
+      2
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Ronnie Screwvala",
+    "fullName": "Ronnie Screwvala",
+    "title": "Guest Shark",
+    "emoji": "🦈",
+    "color": "#888888",
+    "deals": 2,
+    "investedCr": 0.7,
+    "topIndustries": [
+      "Beauty/Fashion",
+      "Technology/Software"
+    ],
+    "seasons": [
+      3
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Viraj Bahl",
+    "fullName": "Viraj Bahl",
+    "title": "Guest Shark",
+    "emoji": "🦈",
+    "color": "#888888",
+    "deals": 2,
+    "investedCr": 0.9,
+    "topIndustries": [
+      "Food and Beverage"
+    ],
+    "seasons": [
+      4
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Chirag Nakrani",
+    "fullName": "Chirag Nakrani",
+    "title": "Guest Shark",
+    "emoji": "🦈",
+    "color": "#888888",
+    "deals": 2,
+    "investedCr": 0.8,
+    "topIndustries": [
+      "Green/CleanTech"
+    ],
+    "seasons": [
+      4
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Deepinder Goyal",
+    "fullName": "Deepinder Goyal",
+    "title": "Guest Shark",
+    "emoji": "🦈",
+    "color": "#888888",
+    "deals": 1,
+    "investedCr": 2.0,
+    "topIndustries": [
+      "Liquor/Alcohol"
+    ],
+    "seasons": [
+      3
+    ]
+  }
+]

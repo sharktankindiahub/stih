@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Aman Gupta",
+    "emoji": "🦈",
+    "industry": "Consumer, Tech",
+    "dealsCount": 0,
+    "totalInvested": 0
+  },
+  {
+    "id": 2,
+    "name": "Anupam Mittal",
+    "emoji": "🦈",
+    "industry": "Tech, Fintech",
+    "dealsCount": 0,
+    "totalInvested": 0
+  },
+  {
+    "id": 3,
+    "name": "Ashneer Grover",
+    "emoji": "🦈",
+    "industry": "Fintech, Tech",
+    "dealsCount": 0,
+    "totalInvested": 0
+  },
+  {
+    "id": 4,
+    "name": "Peyush Bansal",
+    "emoji": "🦈",
+    "industry": "E-commerce, Tech",
+    "dealsCount": 0,
+    "totalInvested": 0
+  },
+  {
+    "id": 5,
+    "name": "Vineeta Singh",
+    "emoji": "🦈",
+    "industry": "Consumer, Beauty",
+    "dealsCount": 0,
+    "totalInvested": 0
+  },
+  {
+    "id": 6,
+    "name": "Namita Thapar",
+    "emoji": "🦈",
+    "industry": "Consumer, Manufacturing",
+    "dealsCount": 0,
+    "totalInvested": 0
+  },
+  {
+    "id": 7,
+    "name": "Ghazal Alagh",
+    "emoji": "🦈",
+    "industry": "Tech, Consumer",
+    "dealsCount": 0,
+    "totalInvested": 0
+  },
+  {
+    "id": 8,
+    "name": "Yash Patel",
+    "emoji": "🦈",
+    "industry": "Tech, Auto",
+    "dealsCount": 0,
+    "totalInvested": 0
+  }
+]

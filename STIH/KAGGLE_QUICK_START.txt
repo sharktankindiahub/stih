@@ -1,0 +1,81 @@
+# KAGGLE API KEY - QUICK SETUP
+
+## Where to Get Your Key
+👉 https://www.kaggle.com/settings/account → Click "Create New API Token" → Download `kaggle.json`
+
+---
+
+## Where to Place Your Key
+
+### 🖥️ Windows
+Copy your `kaggle.json` file to:
+```
+C:\Users\<YourUsername>\.kaggle\kaggle.json
+```
+
+Example:
+```
+C:\Users\john\.kaggle\kaggle.json
+```
+
+### 🍎 Mac
+Copy your `kaggle.json` file to:
+```
+~/.kaggle/kaggle.json
+```
+
+Or run:
+```bash
+mkdir -p ~/.kaggle && cp ~/Downloads/kaggle.json ~/.kaggle/
+chmod 600 ~/.kaggle/kaggle.json
+```
+
+### 🐧 Linux
+Same as Mac:
+```bash
+mkdir -p ~/.kaggle && cp ~/Downloads/kaggle.json ~/.kaggle/
+chmod 600 ~/.kaggle/kaggle.json
+```
+
+---
+
+## Alternative: Environment Variables
+
+Add to `.env.development` or `.env.production`:
+```env
+KAGGLE_USERNAME=your_kaggle_username
+KAGGLE_KEY=your_api_key_here
+```
+
+---
+
+## Verify Setup
+
+Run this command:
+```bash
+python scripts/fetch_kaggle_data.py
+```
+
+✅ Success looks like:
+```
+============================================================
+SHARK TANK INDIA - KAGGLE DATA SYNC
+============================================================
+✓ Using Kaggle credentials from C:\Users\...\.kaggle\kaggle.json
+Fetching data from Kaggle...
+Successfully loaded 702 records from Kaggle
+✅ Saved pitches.json (702 records)
+...
+✅ DATA SYNC COMPLETED SUCCESSFULLY
+```
+
+---
+
+## Admin Panel Usage
+
+1. Start server: `npm run dev`
+2. Go to: http://localhost:3000/admin
+3. Login with your admin credentials
+4. Click "🔄 Reload Data from Kaggle"
+
+Done! Your data will sync automatically. 🎉

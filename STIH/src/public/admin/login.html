@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login - STIH</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo" onclick="window.location.href='/'">>
+      <div class="logo-badge">STI</div>
+      <div class="logo-text">SHARK TANK INDIA HUB</div>
+    </div>
+    <div style="color: var(--muted); font-size: 12px;">Admin Panel</div>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+      <button id="theme-light" class="theme-btn" onclick="themeModule.set('light')" title="Light mode">☀️</button>
+      <button id="theme-dark" class="theme-btn" onclick="themeModule.set('dark')" title="Dark mode">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Login Container -->
+  <div class="login-container">
+    <div class="login-card">
+      <h1 class="display" style="font-size: 32px; margin-bottom: 12px; text-align: center;">Admin Login</h1>
+      <p class="muted" style="text-align: center; margin-bottom: 36px; font-size: 13px;">Sign in to access admin features</p>
+
+      <form id="login-form" onsubmit="adminLogin(event)">
+        <div style="margin-bottom: 18px;">
+          <label class="label" style="display: block; margin-bottom: 8px;">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter username" required />
+        </div>
+
+        <div style="margin-bottom: 24px;">
+          <label class="label" style="display: block; margin-bottom: 8px;">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter password" required />
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">Sign In</button>
+      </form>
+
+      <div id="error-message" class="error-message"></div>
+      <div id="success-message" class="success-message"></div>
+    </div>
+  </div>
+
+  <script src="../js/core/theme.js"></script>
+  <script>
+    // Check if already logged in
+    const token = localStorage.getItem('adminToken');
+    if (token) {
+      window.location.href = '/admin/dashboard.html';
+    }
+
+    // Initialize theme
+    const themeModule = {
+      STORAGE_KEY: 'stih-theme',
+      DARK_CLASS: 'dark',
+      DEFAULT: 'dark',
+
+      init() {
+        const saved = localStorage.getItem(this.STORAGE_KEY) || this.DEFAULT;
+        this.set(saved);
+        this.updateToggleUI();
+      },
+
+      set(mode) {
+        const html = document.documentElement;
+        if (mode === 'light') {
+          html.classList.add('light');
+        } else {
+          html.classList.remove('light');
+        }
+        localStorage.setItem(this.STORAGE_KEY, mode);
+        this.updateToggleUI();
+      },
+
+      getCurrent() {
+        return document.documentElement.classList.contains('light') ? 'light' : 'dark';
+      },
+
+      updateToggleUI() {
+        const current = this.getCurrent();
+        const darkBtn = document.getElementById('theme-dark');
+        const lightBtn = document.getElementById('theme-light');
+
+        if (darkBtn && lightBtn) {
+          if (current === 'dark') {
+            darkBtn.classList.add('active');
+            lightBtn.classList.remove('active');
+          } else {
+            lightBtn.classList.add('active');
+            darkBtn.classList.remove('active');
+          }
+        }
+      }
+    };
+
+    // Initialize theme on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      themeModule.init();
+    });
+
+    async function adminLogin(event) {
+      event.preventDefault();
+
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      const errorEl = document.getElementById('error-message');
+      const successEl = document.getElementById('success-message');
+
+      errorEl.textContent = '';
+      successEl.textContent = '';
+
+      try {
+        const response = await fetch('/api/admin/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ username, password }),
+        });
+
+        if (!response.ok) {
+          const error = await response.json();
+          throw new Error(error.message || 'Login failed');
+        }
+
+        const data = await response.json();
+        localStorage.setItem('adminToken', data.token);
+        successEl.textContent = 'Login successful! Redirecting...';
+
+        setTimeout(() => {
+          window.location.href = '/admin/dashboard.html';
+        }, 1000);
+      } catch (error) {
+        errorEl.textContent = error.message || 'Invalid credentials';
+      }
+    }
+  </script>
+</body>
+</html>

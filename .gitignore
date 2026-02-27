@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Environment & credentials
+.env
+.env.*
+kaggle.json
+*.key
+*.pem
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+
+# Editor directories
+.vscode/
+.idea/
+
+# Backup files
+src/data/backups/
+
+# Raw data (large files)
+src/data/raw/

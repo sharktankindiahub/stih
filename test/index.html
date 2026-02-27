@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="app-environment" content="test" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shark Tank India Hub</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>🦈 Shark Tank India Hub</h1>
+        <p class="tagline">Your go-to hub for Shark Tank India insights</p>
+        <div id="env-badge" class="env-badge"></div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h2>Welcome to Shark Tank India Hub</h2>
+        <p>
+          Explore pitches, investments, and insights from India's most exciting
+          entrepreneurship show.
+        </p>
+        <a href="#features" class="btn">Explore Now</a>
+      </section>
+
+      <section id="features" class="features">
+        <div class="feature-card">
+          <span class="icon">📊</span>
+          <h3>Investment Tracker</h3>
+          <p>Track all deals made across seasons with detailed breakdowns.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">🐋</span>
+          <h3>Shark Profiles</h3>
+          <p>Detailed profiles and investment portfolios of all sharks.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">💡</span>
+          <h3>Startup Stories</h3>
+          <p>Follow up on startups that appeared on the show.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Shark Tank India Hub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Display current environment from meta tag injected at build time
+      const envMeta = document.querySelector('meta[name="app-environment"]');
+      const env = envMeta ? envMeta.getAttribute('content') : 'production';
+      const badge = document.getElementById('env-badge');
+      if (env && env !== 'production') {
+        badge.textContent = env.toUpperCase();
+        badge.classList.add('visible', `env-${env}`);
+      }
+    </script>
+  </body>
+</html>

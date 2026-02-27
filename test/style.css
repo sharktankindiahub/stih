@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #1a1f2e 0%, #0d1117 100%);
+  border-bottom: 2px solid #1f6feb;
+  padding: 2rem 0;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #58a6ff;
+  margin-bottom: 0.5rem;
+}
+
+header .tagline {
+  color: #8b949e;
+  font-size: 1.1rem;
+}
+
+/* Environment badge */
+.env-badge {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.env-badge.visible {
+  display: inline-block;
+}
+
+.env-badge.env-dev {
+  background-color: #388bfd20;
+  color: #58a6ff;
+  border: 1px solid #388bfd;
+}
+
+.env-badge.env-test {
+  background-color: #f0883e20;
+  color: #f0883e;
+  border: 1px solid #f0883e;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e6edf3;
+}
+
+.hero p {
+  color: #8b949e;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: #1f6feb;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #388bfd;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 3rem 0;
+}
+
+.feature-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.feature-card:hover {
+  border-color: #1f6feb;
+  transform: translateY(-4px);
+}
+
+.feature-card .icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #e6edf3;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.feature-card p {
+  color: #8b949e;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #30363d;
+  padding: 2rem 0;
+  text-align: center;
+  color: #8b949e;
+  font-size: 0.9rem;
+}

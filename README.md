@@ -1,4 +1,4 @@
-# STIH - Shark Tank India Hub (Refactored)
+# STIH - Shark Tank India Hub (Refactored).
 
 A **modular, maintainable Node.js + Vanilla JavaScript** full-stack application for Shark Tank India data analysis, with admin panel, Kaggle integration, and interactive analytics.
 
